@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 double askForUserInput() {
     //This Function asks the user for inputs
