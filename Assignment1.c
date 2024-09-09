@@ -17,12 +17,12 @@ double calculateDistance() {
     double x2 = askForUserInput();
     double y1 = askForUserInput();
     double y2 = askForUserInput();
-    //double rootx = pow(x2 - x1, 2);
+    double diffx = x2 - x1;
     //double rooty = pow(y2 - y1, 2);
     printf("Point #1 entered: x1 = %.2f; y1 = %.2f\n", x1, y1);
     printf("Point #2 entered: x2 = %.2f; y2 = %.2f\n", x2, y2);
 
-    double distance = sqrt(x2 - x1);
+    double distance = sqrt(diffx);
     printf("The distance between the two points is %.2f\n", distance);
 
     return distance;
