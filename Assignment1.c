@@ -1,6 +1,16 @@
 #include <stdio.h>
 #include <math.h>
 
+double askForUserInput() {
+    //This Function asks the user for inputs
+
+    double value;
+    printf("Enter a Value: ");
+    scanf("%lf", &value);
+
+    return value;
+}
+
 double calculateDistance() {
     //This Functions calculates the distance between two points and returns it to the user
     double x1 = askForUserInput();
@@ -17,17 +27,6 @@ double calculateDistance() {
     return distance;
 }
 
-
-
-double askForUserInput() {
-    //This Function asks the user for inputs
-
-    double value;
-    printf("Enter a Value: ");
-    scanf("%lf", value);
-
-    return value;
-}
 
 int main(int argc, char **argv) {
     //The main function encapsulates and calls the other functions; returns 0
