@@ -1,17 +1,6 @@
 #include <stdio.h>
 #include <math.h>
 
-int main(int argc, char **argv) {
-    //The main function encapsulates and calls the other functions; returns 0
-    calculateDistance();
-    //calculatePerimeter();
-    //calculateArea():
-    //calculateWidth();
-    //calculateHeight();
-
-    return 0;
-}
-
 double calculateDistance() {
     //This Functions calculates the distance between two points and returns it to the user
     double x1 = askForUserInput();
@@ -38,4 +27,15 @@ double askForUserInput() {
     scanf("%lf", value);
 
     return value;
+}
+
+int main(int argc, char **argv) {
+    //The main function encapsulates and calls the other functions; returns 0
+    calculateDistance();
+    //calculatePerimeter();
+    //calculateArea():
+    //calculateWidth();
+    //calculateHeight();
+
+    return 0;
 }
